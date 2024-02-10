@@ -49,4 +49,4 @@ if __name__ == "__main__":
             search = gr.Button(value="Search")
             output = gr.Markdown()
             search.click(answer_question, inputs=[question], outputs=[output])
-    demo.launch(share=True)
+    demo.launch(share=False)

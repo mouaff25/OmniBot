@@ -3,6 +3,7 @@ OMNIBOT_DESCRIPTION = """# OmniBot 🤖💡
 OmniBot is your versatile AI companion, capable of harnessing the power of the web to provide information, answer questions, generate ideas, and offer insightful suggestions.
 
 ## Features:
+- 🗣️ **Conversation:** Engage in dynamic conversations with OmniBot, your intelligent companion.
 - 🌐 **Web Information Retrieval:** OmniBot scours the vast expanses of the internet to fetch relevant and up-to-date information on any topic.
 - 💬 **Question Answering:** Ask OmniBot anything, and it will leverage its knowledge to provide accurate and concise answers.
 - 💡 **Idea Generation:** Stuck in a creative rut? OmniBot is here to help spark new ideas and provide inspiration.
