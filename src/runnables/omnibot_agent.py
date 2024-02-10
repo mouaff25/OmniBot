@@ -15,7 +15,7 @@ omnibot_runnable = RunnablePassthrough.assign(
     conversation_response=conversation_runnable
 ) | RunnableBranch(
     (
-        lambda x: "I'm sorry, I'm not able to answer this question" in x["conversation_response"], # type: ignore
+        lambda x: "I'm sorry, I'm not able to" in x["conversation_response"], # type: ignore
         web_crawler_agent_runnable,
     ),
     lambda x: x["conversation_response"], # type: ignore
