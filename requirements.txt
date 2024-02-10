@@ -1,0 +1,8 @@
+gradio
+langchain
+beautifulsoup4
+tavily-python
+langchain-google-genai
+pydantic-settings
+unstructured
+google
