@@ -16,11 +16,20 @@ Activate OmniBot's Crawler mode to harness the power of the web for instant know
 
 To use OmniBot, follow these simple steps:
 
-1. **Installation**: Clone the repository to your local machine by running `git clone`
+1. **Installation**: Clone the repository to your local machine by running `git clone https://github.com/mouaff25/OmniBot`
    
 2. **Dependencies**: Make sure you have all dependencies installed by running `pip install -r requirements.txt`.
 
-3. **Run**: Execute the `main.py` file to start OmniBot by running `python main.py`. This will launch the gradio interface, allowing you to interact with OmniBot.
+3. **Configuration**: Create a `.env` file in the root directory of the project and add the following environment variables:
+
+    ```env
+    GOOGLE_API_KEY=YOUR_GOOGLE_API_KEY
+    TAVILY_API_KEY=YOUR_TAVILY_API_KEY
+    ```
+
+    `GOOGLE_API_KEY` is required to use Google's generative model Gemini, and `TAVILY_API_KEY` is required to use Tavily's search API.
+
+4. **Run**: Execute the `main.py` file to start OmniBot by running `python main.py`. This will launch the gradio interface, allowing you to interact with OmniBot.
 
 ## Contributors:
 
