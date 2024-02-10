@@ -1,8 +1,8 @@
-gradio
-langchain
-beautifulsoup4
-tavily-python
-langchain-google-genai
-pydantic-settings
-unstructured
-google
+gradio==4.17.0
+langchain==0.1.5
+beautifulsoup4==4.12.3
+tavily-python==0.3.1
+langchain-google-genai==0.0.7
+pydantic-settings==2.1.0
+unstructured==0.12.3
+google==3.0.0
