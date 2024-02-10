@@ -16,7 +16,7 @@ Activate OmniBot's Crawler mode to harness the power of the web for instant know
 
 To use OmniBot, follow these simple steps:
 
-1. **Installation**: Clone the repository to your local machine.
+1. **Installation**: Clone the repository to your local machine by running `git clone`
    
 2. **Dependencies**: Make sure you have all dependencies installed by running `pip install -r requirements.txt`.
 
