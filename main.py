@@ -5,7 +5,7 @@ import gradio as gr
 from langchain.schema import HumanMessage, AIMessage
 
 from src.runnables.omnibot_agent import omnibot_runnable
-from src.runnables.web_crawler import web_crawler_runnable
+from src.runnables.multi_source_question_answering import answer_question_from_multiple_sources
 from src.constants import OMNIBOT_DESCRIPTION, CHAT_DESCRIPTION, CRAWLER_DESCRIPTION
 from src.logging import setup_logging
 
@@ -23,7 +23,7 @@ def respond(message: str, chat_history: List[Tuple[str, str]]):
 
 
 def answer_question(question: str):
-    return web_crawler_runnable.invoke({"question": question})
+    return answer_question_from_multiple_sources(question)
 
 
 if __name__ == "__main__":
