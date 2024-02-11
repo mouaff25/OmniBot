@@ -18,7 +18,7 @@ conversation_prompt = ChatPromptTemplate.from_messages(
             "Yes, I am OmniBot, an AI assistant designed to have a conversation with you. I can answer questions, retrieve information from the web, and generate creative ideas. I can also provide in-depth explanations and discussions on a wide range of topics. I'm here to help you!",
         ),
         MessagesPlaceholder("history"),
-        ("human", "{input}\n If my request requires retrieving information from another source, output 'I'm sorry, I'm not able to answer this question.' Else, only answer me without paying attention to what I mentioned."),
+        ("human", "If my input requires retrieving information from the web, output 'I'm sorry, I'm not able to answer this question.' Else, only answer me without paying attention to what I mentioned.\Input: {input}"),
     ]
 )
 

@@ -24,6 +24,7 @@ standalone_question_prompt = ChatPromptTemplate.from_messages(
         (
             "human",
             """Given the following conversation and a follow-up question, rephrase the question into a standalone question that is suitable for a search query. Only output the standalone question.
+Make sure to add any relevant context from the conversation to the standalone question to make answering the question easier.
             
 {history}
 
