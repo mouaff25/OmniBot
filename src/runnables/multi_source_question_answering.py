@@ -1,4 +1,5 @@
 from operator import itemgetter
+from functools import lru_cache
 from logging import getLogger
 
 from langchain_core.runnables import RunnableLambda
@@ -21,7 +22,7 @@ def answer_question(question: str, context: str) -> str:
         logger.warning(f"Blocked prompt exception for question: {question} and context: {context[:100]}")
         return no_information_response
 
-
+@lru_cache(maxsize=128)
 def answer_question_from_multiple_sources(question: str):
     logger.info(f"Answering question from multiple sources: {question}")
     context = tavily_retriever.invoke(question)
